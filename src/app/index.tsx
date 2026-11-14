@@ -3,7 +3,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
-import { Spacing } from '@/constants/theme';
+import { Spacing, appColors } from '@/constants/theme';
 
 
 export default function Login() {
@@ -12,7 +12,7 @@ export default function Login() {
     <ThemedView style={styles.container}>
       <SafeAreaView style={styles.safeArea}>
         <ThemedView style={styles.heroSection}>
-          <ThemedText type='title'> Beacon Peach</ThemedText>
+          <ThemedText type='title' style={styles.title}> Beacon Peach</ThemedText>
         </ThemedView>
       </SafeAreaView>
     </ThemedView>
@@ -38,7 +38,8 @@ const styles = StyleSheet.create({
   },
   title: {
     textAlign: 'center',
-    justifyContent: 'center'
+    justifyContent: 'center',
+    color: appColors.californiaPeach,
   }
 })
 

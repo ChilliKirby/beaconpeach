@@ -7,6 +7,10 @@ import '@/global.css';
 
 import { Platform } from 'react-native';
 
+export const appColors = {
+  californiaPeach: '#FcBE6A',
+}
+
 export const Colors = {
   light: {
     text: '#000000',

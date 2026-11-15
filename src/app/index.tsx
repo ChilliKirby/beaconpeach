@@ -1,6 +1,7 @@
 import { StyleSheet } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
+import { AppButton } from '@/components/appButton';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
 import { Spacing, appColors } from '@/constants/theme';
@@ -13,6 +14,7 @@ export default function Login() {
       <SafeAreaView style={styles.safeArea}>
         <ThemedView style={styles.heroSection}>
           <ThemedText type='title' style={styles.title}> Beacon Peach</ThemedText>
+          <AppButton title="Login" onPress={ () => {}} variant="primary" disabled={false} />
         </ThemedView>
       </SafeAreaView>
     </ThemedView>

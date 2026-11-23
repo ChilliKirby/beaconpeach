@@ -33,7 +33,6 @@ const styles = StyleSheet.create({
     justifyContent: 'center'
   },
   safeArea: {
-    backgroundColor: 'yellow',
     flex: 1,
     paddingHorizontal: Spacing.four,
     gap: Spacing.four

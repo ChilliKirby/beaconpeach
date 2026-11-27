@@ -8,7 +8,8 @@
     "scheme": "beaconpeach",
     "userInterfaceStyle": "automatic",
     "ios": {
-      "icon": "./assets/expo.icon"
+      "icon": "./assets/expo.icon",
+      "bundleIdentifier": "com.chillikirby.beaconpeach"
     },
     "android": {
       "adaptiveIcon": {
@@ -26,7 +27,12 @@
     },
     "plugins": [
       "expo-router",
-      "react-native-nitro-google-signin",
+      [
+        "react-native-nitro-google-signin",
+        {
+          "iosUrlScheme": "com.googleusercontent.apps.195770122304-qq8ascaj3fj85g31ljjtpt1cc6mj1aut"
+        }
+      ],
       [
         "expo-splash-screen",
         {
